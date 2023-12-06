@@ -6,8 +6,10 @@ IMGDIR="$HOME/Library/Application Support/Microsoft/Teams/Backgrounds/Uploads"
 if [ -d IMGDIR ]
 then
     echo "Directory exists"
+    echo "Directory: $IMGDIR"
 else
     echo "Directory does not exist"
+    echo "Creating Directory $IMGDIR"
     mkdir -p $IMGDIR
 fi
 
@@ -22,8 +24,10 @@ IMGDIR2="$HOME/Library/Containers/com.microsoft.teams2/Data/Library/Application 
 if [ -d IMGDIR2 ]
 then
     echo "Directory exists"
+    echo "Directory: $IMGDIR2"
 else
     echo "Directory does not exist"
+    echo "Creating Directory $IMGDIR2"
     mkdir -p $IMGDIR2
 fi
 
