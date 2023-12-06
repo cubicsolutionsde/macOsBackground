@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Teams Classic
+## Teams Classic
 IMGDIR="$HOME/Library/Application Support/Microsoft/Teams/Backgrounds/Uploads"
 
 if [ -d IMGDIR ]
@@ -18,7 +18,6 @@ curl https://raw.githubusercontent.com/cubicsolutionsde/macOsTeamsBackground/mai
 
 
 ## New Teams Client
-
 IMGDIR2="$HOME/Library/Containers/com.microsoft.teams2/Data/Library/Application Support/Microsoft/MSTeams/Backgrounds/Uploads"
 
 if [ -d IMGDIR2 ]
@@ -32,7 +31,7 @@ else
 fi
 
 cd $IMGDIR2
-## Bild muss als GUID eingefügt werden
-## Bild muss als Thumbnail eingefügt werden mit 280x158px mit "_thumb" als suffix
+## Wallpaper needs to be named as GUID
+## wallpaper needs to be available as Thumbnail with "_thumb" as suffix in the resolution of 280x158px 
 curl https://raw.githubusercontent.com/cubicsolutionsde/macOsTeamsBackground/main/95767317-69d4-4901-8a36-18aba5b82d11.png -o 95767317-69d4-4901-8a36-18aba5b82d11.png
 curl https://raw.githubusercontent.com/cubicsolutionsde/macOsTeamsBackground/main/95767317-69d4-4901-8a36-18aba5b82d11_thumb.png -o 95767317-69d4-4901-8a36-18aba5b82d11_thumb.png
